@@ -1,4 +1,0 @@
-/**
- * @author Mohammad Khalid Hussain <mohammad.khalid.hussain@gmail.com>
- * @since ${date}
- */

@@ -20,6 +20,7 @@ $RECYCLE.BIN/
 
 
 ### NetBeans ###
+nbproject/*.*
 nbproject/private/
 nbproject/mylicense.txt
 nbproject/project.properties
