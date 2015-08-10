@@ -21,6 +21,9 @@ $RECYCLE.BIN/
 
 ### NetBeans ###
 nbproject/private/
+nbproject/mylicense.txt
+nbproject/project.properties
+nbproject/project.xml
 build/
 nbbuild/
 dist/
