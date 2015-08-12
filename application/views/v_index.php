@@ -20,7 +20,7 @@
     </head>
     <body>
         <div class="container">
-            <h1>My Users <a class="btn btn-primary" href="<?php echo site_url('events/new_event');?>" role="button">New Event</a></h1>
+            <h1>My Events <a class="btn btn-primary" href="<?php echo site_url('events/new_event');?>" role="button">New Event</a></h1>
             <table class="table table-condensed">
                 <tr>
                     <th>Id</th>
@@ -48,7 +48,7 @@
                     </tr>
                     <?php
                 }
-                if (count($users) == 0) {
+                if (count($events) == 0) {
                     ?>
                     <tr><td colspan="3">Sorry, we have no data</td></tr>
                     <?php

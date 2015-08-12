@@ -17,6 +17,7 @@ class M_events extends CI_Model {
 	
 	public function get_event($id = FALSE)
     {
+		$id = $this->input->post('id');
         $query = $this->db->get_where('events', array('id' => $id));
         return $query->row();
     }
