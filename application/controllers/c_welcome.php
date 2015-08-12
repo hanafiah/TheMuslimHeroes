@@ -23,9 +23,7 @@ class C_welcome extends CI_Controller {
 		$this->load->view('welcome_message');
 	}
 	
-	public function home(){
-		// $this->load->model('m_users');
-		
+	public function home(){		
 		$data['title'] = 'The Muslim Heroes'; // $title
 		$data['page_header'] = 'The Muslim Heroes Homepage';
 		 

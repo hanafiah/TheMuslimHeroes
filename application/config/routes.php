@@ -53,6 +53,7 @@ $route['default_controller'] = 'c_welcome';
 
 // For the website
 $route['login'] = 'c_login';
+$route['events'] = 'c_events';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
