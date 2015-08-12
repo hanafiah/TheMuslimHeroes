@@ -1,5 +1,5 @@
 <?php
-
+defined('BASEPATH') OR exit('No direct script access allowed');
 /**
  * @author Mohammad Khalid Hussain <mohammad.khalid.hussain@gmail.com>
  * @since 12/08/2015
