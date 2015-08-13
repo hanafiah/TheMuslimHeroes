@@ -1,31 +1,27 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+ * @author Mohammad Khalid Hussain <mohammad.khalid.hussain@gmail.com>
+ * @since 12/08/2015
+ */
 
 class Welcome extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+	public $view_data;
+	
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('m_events');
+    }
+	
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->view_data['events'] = $this->m_events->get_events();
+        $this->load->view('v_index', $this->view_data);		
 	}
 	
 	public function home(){		
 		$data['title'] = 'The Muslim Heroes'; // $title
-		$data['page_header'] = 'The Muslim Heroes Homepage';
-		 
+		$data['page_header'] = 'The Muslim Heroes';
 	}
 }

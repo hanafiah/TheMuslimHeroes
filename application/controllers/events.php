@@ -12,7 +12,6 @@ class Events extends CI_Controller {
     {
         parent::__construct();
         $this->load->model('m_events');
-        $this->load->helper('url');
     }
 	
     public function index()
@@ -37,7 +36,7 @@ class Events extends CI_Controller {
             redirect('events');
         }
         
-        $this->view_data['event'] = $this->m_events->get_user($id);
+        $this->view_data['event'] = $this->m_events->get_event($id);
         $this->load->view('v_edit_event', $this->view_data);
     }
     
