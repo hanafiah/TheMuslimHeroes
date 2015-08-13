@@ -37,6 +37,8 @@ class Events extends CI_Controller {
         }
         
         $this->view_data['event'] = $this->m_events->get_event($id);
+        //You can debug your sql by putting the following line
+        //echo $this->db->last_query();
         $this->load->view('v_edit_event', $this->view_data);
     }
     
